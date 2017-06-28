@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "watch": "gatsby develop"
+  },
+  "dependencies": {
+    "gatsby": "next",
+    "gatsby-link": "next",
+    "react": "^15.6.1",
+    "react-helmet": "^5.1.3"
+  }
+}
