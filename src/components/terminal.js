@@ -46,7 +46,7 @@ export const Prompt = ({ path, children }) =>
         padding: '0px 5px',
       }}
     >
-      >
+      &gt;
     </span>
     {children}
   </div>
