@@ -4,3 +4,5 @@ node_js:
 script:
   - yarn run ci
 cache: yarn
+notifications:
+  email: false
