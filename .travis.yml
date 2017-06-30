@@ -1,8 +1,20 @@
 language: node_js
+
 node_js:
   - '6'
+
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install --yes python-pip
+  - pip install hatch-cli===0.0.1b3
+
 script:
   - yarn run ci
+
+deploy:
+  - hatch website deploy hatch.yml ./public
+
 cache: yarn
+
 notifications:
   email: false
