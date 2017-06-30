@@ -5,13 +5,13 @@ language: node_js
 node_js:
   - '6'
 
-before_install:
+script:
+  - yarn run ci
+
+before_deploy:
   - sudo apt-get update -qq
   - sudo apt-get install --yes python-pip
   - sudo pip install git+https://github.com/hatch-sh/hatch.git@master
-
-script:
-  - yarn run ci
 
 deploy:
   provider: script
