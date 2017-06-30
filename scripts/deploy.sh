@@ -2,4 +2,4 @@
 
 set -euo pipefail
 
-hatch website deploy hatch.yml ./public
+hatch website deploy ./public
