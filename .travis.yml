@@ -14,7 +14,10 @@ script:
   - yarn run ci
 
 deploy:
-  - hatch website deploy hatch.yml ./public
+  provider: script
+  script: scripts/deploy.sh
+  on:
+    branch: master
 
 cache: yarn
 
