@@ -39,13 +39,20 @@ const Body = () =>
       marginTop: '2em',
     }}
   >
-    <p>Hatch automates the deployment of static websites to Amazon Web Services</p>
+    <p>
+      You can check out the code on{' '}
+      <a href="https://github.com/hatch-sh/hatch" target="_blank">
+        Github
+      </a>{' '}
+      or read the <a href="/getting-started">getting started guide</a> to get up and
+      running in no time.
+    </p>
   </div>
 
 const Footer = () =>
   <div
     style={{
-      marginTop: '2rem',
+      marginTop: '6rem',
       fontWeight: '300',
       fontSize: '0.8rem',
       textAlign: 'center',
@@ -74,12 +81,7 @@ const Footer = () =>
 export default () =>
   <div>
     <Helmet>
-      <meta charSet="utf-8" />
       <title>Hatch</title>
-      <link
-        href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,700,900"
-        rel="stylesheet"
-      />
     </Helmet>
     <div className="container">
       <Header />
