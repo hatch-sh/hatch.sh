@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "ci": "yarn run lint:bail && gatsby build",
-    "clean": "rm -rf public/static public/index.html",
+    "build": "yarn run clean && gatsby build",
+    "ci": "yarn run lint:bail && yarn run build",
+    "clean": "rm -rf public .cache",
     "lint": "eslint --fix src",
     "lint:bail": "eslint src",
     "watch": "gatsby develop"
