@@ -1,10 +1,13 @@
 {
+  "license": "MIT",
+  "private": true,
   "scripts": {
-    "build": "yarn run clean && gatsby build",
+    "build": "yarn run clean && gatsby build && du -skh public",
     "ci": "yarn run lint:bail && yarn run build",
     "clean": "rm -rf public .cache",
     "lint": "eslint --fix src",
     "lint:bail": "eslint src",
+    "serve": "yarn run build && cd public && python -m SimpleHTTPServer 9000",
     "watch": "gatsby develop"
   },
   "dependencies": {
