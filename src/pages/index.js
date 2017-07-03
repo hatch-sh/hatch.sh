@@ -41,7 +41,11 @@ const Body = () =>
   >
     <p>
       You can check out the code on{' '}
-      <a href="https://github.com/hatch-sh/hatch" target="_blank">
+      <a
+        href="https://github.com/hatch-sh/hatch"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Github
       </a>{' '}
       or read the <a href="/getting-started">getting started guide</a> to get up and
