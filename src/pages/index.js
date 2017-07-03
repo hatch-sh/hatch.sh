@@ -78,21 +78,45 @@ const Footer = () =>
     </p>
   </div>
 
-export default () =>
-  <div>
-    <Helmet>
-      <title>Hatch</title>
-    </Helmet>
-    <div className="container">
-      <Header />
-      <Terminal>
-        <Prompt>brew tap hatch-sh/hatch</Prompt>
-        <Prompt>brew install hatch</Prompt>
-        <Prompt>hatch deploy</Prompt>
-        <Line>Deploying site</Line>
-        <Line>Site deployed to http://abc.foobar.com</Line>
-      </Terminal>
-      <Body />
-      <Footer />
+export default ({ data }) => {
+  // const menu = data.allMarkdownRemark.edges.map(e =>
+  //   <div>
+  //     - {e.node.frontmatter.title}
+  //   </div>
+  // )
+
+  return (
+    <div>
+      <Helmet>
+        <title>Hatch</title>
+      </Helmet>
+      <div className="container">
+        <Header />
+        <Terminal>
+          <Prompt>brew tap hatch-sh/hatch</Prompt>
+          <Prompt>brew install hatch</Prompt>
+          <Prompt>hatch deploy</Prompt>
+          <Line>Deploying site</Line>
+          <Line>Site deployed to http://abc.foobar.com</Line>
+        </Terminal>
+        <Body />
+        <Footer />
+      </div>
     </div>
-  </div>
+  )
+}
+
+export const routeQuery = graphql`
+  query MarkdownFiles {
+    allMarkdownRemark {
+      edges {
+        node {
+          html
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  }
+`

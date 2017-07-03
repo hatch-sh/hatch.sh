@@ -1,12 +1,16 @@
+/* eslint-env node */
 module.exports = {
-    siteMetadata: {
-        title: "Hatch"
+  siteMetadata: {
+    title: 'Hatch',
+  },
+  plugins: [
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
     },
-    plugins: [{
-        resolve: `gatsby-source-filesystem`,
-        options: {
-            path: `${__dirname}/src/pages`,
-            name: "pages",
-        },
-    }]
+    'gatsby-transformer-remark',
+  ],
 }
