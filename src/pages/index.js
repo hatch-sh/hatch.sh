@@ -21,6 +21,7 @@ const Header = () =>
         fontSize: '3rem',
         lineHeight: '3.2rem',
         paddingBottom: '1rem',
+        marginBottom: '1rem',
       }}
     >
       <b>Easy</b> deployment of static websites to Amazon Web Services
