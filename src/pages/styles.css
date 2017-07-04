@@ -1,5 +1,5 @@
 body {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     line-height: 1.8rem;
     font-weight: 300;
     /*font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;*/
@@ -7,9 +7,18 @@ body {
     margin: 30px;
 }
 
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 a {
-    color: black;
+    color: #ee6a5f;
     text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
 }
 
 code, pre {
@@ -26,11 +35,4 @@ code, pre {
     text-align: center;
     font-size: 2.4rem;
     margin: 2.4rem 0;
-}
-
-h2 {
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-    font-weight: bold;
 }

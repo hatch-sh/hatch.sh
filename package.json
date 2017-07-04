@@ -1,8 +1,13 @@
 {
+  "license": "MIT",
+  "private": true,
   "scripts": {
-    "ci": "yarn run lint:bail && gatsby build",
+    "build": "yarn run clean && gatsby build && du -skh public",
+    "ci": "yarn run lint:bail && yarn run build",
+    "clean": "rm -rf public .cache",
     "lint": "eslint --fix src",
     "lint:bail": "eslint src",
+    "serve": "yarn run build && cd public && python -m SimpleHTTPServer 9000",
     "watch": "gatsby develop"
   },
   "dependencies": {
@@ -11,8 +16,9 @@
     "eslint-config-prettier": "^2.2.0",
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.1.0",
-    "gatsby": "next",
-    "gatsby-link": "next",
+    "gatsby": "1.0.0-beta.6",
+    "gatsby-link": "1.0.0-beta.6",
+    "marked": "^0.3.6",
     "prettier": "^1.5.2",
     "react": "^15.6.1",
     "react-helmet": "^5.1.3"
