@@ -5,6 +5,7 @@ export default () =>
     style={{
       fontWeight: 900,
       textAlign: 'center',
+      fontSize: '2em',
       padding: '1em',
     }}
   >
