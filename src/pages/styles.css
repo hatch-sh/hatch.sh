@@ -9,7 +9,13 @@ body {
 
 h2 {
     font-size: 1.5em;
+    margin: 1em 0 0.5em 0;
     font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+    margin: 1em 0 0 0;
 }
 
 a {
@@ -18,10 +24,16 @@ a {
 }
 
 strong {
-    font-weight: bold;
+    font-weight: 400;
 }
 
-code, pre {
+code {
+    font-size: 0.9em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+pre code  {
+    font-size: 1em;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -35,4 +47,21 @@ code, pre {
     text-align: center;
     font-size: 2.4rem;
     margin: 2.4rem 0;
+}
+
+.docs pre {
+    color: #6e6e6e;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    background: #f3f3f3;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.docs p {
+    margin: 1em 0;
+}
+
+.docs ul {
+    padding-left: 2em;
 }

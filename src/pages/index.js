@@ -26,15 +26,15 @@ export default () =>
     </h2>
     <p style={{ padding: '1.5em 0' }}>
       Simple command line interface for managing your static websites on AWS — Hatch takes
-      cares of creating S3 buckets, configuring your custom domains, and setting up
-      CloudFront — All from the comforts of your command line.
+      cares of creating S3 buckets and configuring your custom domains  — All from the
+      comforts of your command line.
     </p>
     <Terminal>
       <Prompt>brew tap hatch-sh/hatch</Prompt>
       <Prompt>brew install hatch</Prompt>
-      <Prompt>hatch deploy</Prompt>
-      <Line>Deploying site</Line>
-      <Line>Site deployed to http://abc.foobar.com</Line>
+      <Prompt>hatch website deploy</Prompt>
+      <Line>Hatching...</Line>
+      <Line>Website uploaded to http://2aee2ef6cab3.s3-website.eu-central-1.amazonaws.com</Line>
     </Terminal>
     <div
       style={{
