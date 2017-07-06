@@ -2,6 +2,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import marked from 'marked'
 
+import { HatchName } from '../components/header'
+
 const markup = marked(`
 ## Installation
 
@@ -14,6 +16,7 @@ export default ({ data }) => {
       <Helmet>
         <title>Hatch Installation</title>
       </Helmet>
+      <HatchName />
       <div dangerouslySetInnerHTML={{ __html: markup }} />
     </div>
   )
