@@ -1,4 +1,12 @@
+/* eslint-env node */
 import React from 'react'
+
+const ProductionStyles = () =>
+  process.env.NODE_ENV === `production` &&
+  <style
+    id="gatsby-inlined-css"
+    dangerouslySetInnerHTML={{ __html: require(`!raw-loader!../public/styles.css`) }}
+  />
 
 export default ({ body, headComponents, postBodyComponents }) =>
   <html lang="en">
@@ -13,6 +21,7 @@ export default ({ body, headComponents, postBodyComponents }) =>
         rel="stylesheet"
       />
       {headComponents}
+      <ProductionStyles />
     </head>
     <body>
       <div id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
