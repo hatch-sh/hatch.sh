@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Link from 'gatsby-link'
 
+import Header from '../components/header'
 import { Terminal, Prompt, Line } from '../components/terminal'
 
 import './styles.css'
@@ -11,20 +12,8 @@ export default () =>
     <Helmet>
       <title>Hatch</title>
     </Helmet>
-    <h2
-      style={{
-        fontSize: '3rem',
-        fontWeight: 'normal',
-        lineHeight: '3.2rem',
-        marginBottom: '1rem',
-        marginTop: 0,
-        paddingBottom: '1rem',
-        textAlign: 'center',
-      }}
-    >
-      <b>Easy</b> deployment of static websites to Amazon Web Services
-    </h2>
-    <p style={{ padding: '1.5em 0' }}>
+    <Header />
+    <p style={{ padding: '1em 0 2em 0' }}>
       Simple command line interface for managing your static websites on AWS — Hatch takes
       cares of creating S3 buckets, configuring your custom domains, and setting up
       CloudFront — All from the comforts of your command line.
