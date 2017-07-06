@@ -2,4 +2,4 @@
 
 set -euo pipefail
 
-hatch website deploy --config-file=. ./public
+hatch website deploy --config=website.yml ./public
