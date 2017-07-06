@@ -20,18 +20,7 @@ export default () =>
       alignItems: 'center',
     }}
   >
-    <div
-      style={{
-        flex: 1,
-      }}
-    >
-      <img src={logo} alt="Hatch" width="200px" height="240px" />
-    </div>
-    <div
-      style={{
-        flexGrow: 1,
-      }}
-    >
+    <div style={{ flexGrow: 1 }}>
       <HatchName />
       <h2
         style={{
@@ -47,5 +36,8 @@ export default () =>
         <span style={{ fontWeight: 'bold' }}>Easy</span> deployment of static websites to
         Amazon Web Services
       </h2>
+    </div>
+    <div style={{ flex: 1 }}>
+      <img src={logo} alt="Hatch" width="200px" height="240px" />
     </div>
   </div>
