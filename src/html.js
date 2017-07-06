@@ -1,9 +1,24 @@
+/* eslint-env node */
 import React from 'react'
+
+const ProductionStyles = () =>
+  process.env.NODE_ENV === `production` &&
+  <style
+    id="gatsby-inlined-css"
+    dangerouslySetInnerHTML={{ __html: require(`!raw-loader!../public/styles.css`) }}
+  />
 
 export default ({ body, headComponents, postBodyComponents }) =>
   <html lang="en">
     <head>
       <meta charSet="utf-8" />
+      <meta name="referrer" content="origin" />
+      <meta
+        name="description"
+        content="Easy deployment of static websites to Amazon Web Services"
+      />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <title>Hatch.sh</title>
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
@@ -13,6 +28,7 @@ export default ({ body, headComponents, postBodyComponents }) =>
         rel="stylesheet"
       />
       {headComponents}
+      <ProductionStyles />
     </head>
     <body>
       <div id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
