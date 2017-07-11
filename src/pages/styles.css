@@ -50,3 +50,11 @@ code, pre {
 .docs p {
     margin: 1em 0;
 }
+
+.docs ul {
+    padding-left: 0em
+}
+
+.docs ul ul {
+    padding-left: 2em
+}
