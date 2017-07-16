@@ -1,3 +1,4 @@
 domain: "hatch.sh"
 name: "hatch.sh"
 region: "eu-central-1"
+path: "./public"
