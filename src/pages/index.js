@@ -25,8 +25,8 @@ export default () =>
       <b>Easy</b> deployment of static websites to Amazon Web Services
     </h2>
     <p style={{ padding: '1.5em 0' }}>
-      Simple command line interface for managing your static websites on AWS — Hatch takes
-      cares of creating S3 buckets and configuring your custom domains — All from the
+      Simple command line interface for managing your static websites on AWS. Hatch takes
+      cares of creating S3 buckets and configuring your custom domains — all from the
       comforts of your command line.
     </p>
     <Terminal>
