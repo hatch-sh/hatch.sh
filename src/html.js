@@ -27,8 +27,8 @@ export default ({ body, headComponents, postBodyComponents }) =>
         href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,700,900"
         rel="stylesheet"
       />
-      <link rel="icon" type="image/png" href="/static/favicon-32x32.png" sizes="32x32" />
-      <link rel="icon" type="image/png" href="/static/favicon-16x16.png" sizes="16x16" />
+      <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+      <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
       {headComponents}
       <ProductionStyles />
     </head>
