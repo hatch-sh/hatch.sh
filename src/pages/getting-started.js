@@ -2,8 +2,6 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import marked from 'marked'
 
-import logo from '../../static/images/hatch-200x240.png'
-
 const markup = marked(`
 
 Hatch makes it easy to manage your static websites on [AWS][aws] — Hatch takes
