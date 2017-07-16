@@ -29,12 +29,12 @@ brew install hatch
 hatch --version
 \`\`\`
 
-This will install hatch as well as [Zsh][zsh] and [Bash][bash] completion scripts so you get
+This will install Hatch as well as [Zsh][zsh] and [Bash][bash] completion scripts so you get
 nice helpful tab-completions in your shell. For the Bash completions to work
 you need to have the \`bash-completion\` homebrew package installed. For Zsh
 completions to work you need to be using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
 
-On other platforms you can install hatch as a pip package
+On other platforms you can install Hatch as a pip package
 
 \`\`\`sh
 pip install hatch-cli
@@ -52,7 +52,7 @@ make install
 
 ### AWS
 
-As hatch helps you deploy static websites to AWS you need to have an AWS
+As Hatch helps you deploy static websites to AWS you need to have an AWS
 account — You can create a free account [here][aws-free].
 
 The AWS services that Hatch is using are very inexpensive but they aren't free.
@@ -102,7 +102,7 @@ hatch website deploy \\
 
 ### Auto-generated URLS
 
-If you don't supply a name or custom domain hatch will simply upload your site
+If you don't supply a name or custom domain Hatch will simply upload your site
 to a randomly generated bucket.
 
 ### Named buckets
