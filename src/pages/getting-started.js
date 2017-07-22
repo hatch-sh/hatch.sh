@@ -100,20 +100,35 @@ hatch website deploy \\
 
 ## Deploying
 
+All of these examples can be achieved through command line arguments or through
+a YAML configuration file (see seciton above). we use command-line arguments here.
+
 ### Auto-generated URLS
 
 If you don't supply a name or custom domain Hatch will simply upload your site
 to a randomly generated bucket.
+
+\`\`\`sh
+hatch website deploy
+\`\`\`
 
 ### Named buckets
 
 If you use the \`name\` option you can control the name of the bucket and thus
 the prefix of the S3 website URL.
 
+\`\`\`sh
+hatch website deploy --name myname.com
+\`\`\`
+
 ### Custom domains
 
 By using the \`domain\` option you can use a custom domain if you've registered
 it in [Route53][route53].
+
+\`\`\`sh
+hatch website deploy --domain myname.com
+\`\`\`
 
 ### Examples
 
